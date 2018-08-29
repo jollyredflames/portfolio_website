@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Sarthak</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet" href="css/bootstrap-4.0.0.css">
+      
+  </head>
+    
+  <body onresize="sideNavLive()" style="width: 100%;
+               background-image: url(images/background.png);
+               background-repeat: repeat-y;
+               background-size:cover;
+               background-position: center top;">
+      
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="active" href="#HomeResume">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="#contactMe">Contact</a>
+      </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span id="menuIcon" style="position: fixed; font-size:35px; color:black; cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "18%";
+                document.getElementById("mySidenav").style.minWidth = "150px";
+                document.getElementById("main").style.marginLeft = String(Math.max(0.18 * window.innerWidth, 150)) + "px";
+            }
+
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.getElementById("mySidenav").style.minWidth = "0";
+            }
+        
+            function sideNavlive() {
+                if (document.getElementById("mySideNav").style.minWidth != 0){
+                    document.getElementById("main").style.marginLeft = String(Math.max(0.18 * window.innerWidth, 150)) + "px";
+                    }
+            }
+    </script>
+      
+      <div id="main">
+      
+    <div id="page" class="container">
+      <hr>
+      <div class="row" id="HomeResume" style="width: 100%;
+                                              height: 10;
+                                              padding-top: 28%;
+                                              background-image: url(images/top_banner.png); 
+                                              background-repeat: no-repeat;
+                                              background-size:contain;
+                                              background-position: center top;">
+        <div class="col-6">
+          <h1>Sarthak Saxena</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <div class="media">
+            <img class="mr-3" src="images/profile.svg" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">AI &amp; Web Developer, Student</h5>
+                <font size="-1">
+              Although all my courses in University have been focused on Object Oriented Programming, my projects have been focused on Application (Android and iOS) and database development. I am always looking for the right opportunity and love to freelance. Currently looking for an internship in back-end development, or in Database Management (writing SQL code). In my spare time, I like creating useful apps. Currently I am working on Connct, a secretive project which I hope to showcase venture capitalists early October! 
+                </font>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="row justify-content-md-around m-1">
+            <address>
+              <strong>Sarthak Saxena</strong><br>
+              Toronto, Canada, M5G-1R1<br>
+              <img src="images/phone_icon.png" height="22" align="left">Phone: (647) 832-0518<br>
+              <a href="mailto:#">ssarthak.1999@gmail.com</a><br>
+              Please Email Me for my Home Address.
+              <a href="">Download my Resume</a>
+            </address>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h2>Education</h2>
+          <hr>
+            <h3>University of Toronto: Double Bachelors</h3>
+            <div style="margin-left: 15px">
+          <div class="row">
+            <div class="col-6">
+              <h4>Computer Science</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Sept 2017 - Present</h5>
+            </div>
+          </div>
+          <h6><span class="badge badge-secondary">Artificial Intelligence</span> <span class="badge badge-secondary">Web &amp; Internet Tech</span> <span class="badge badge-secondary">Second Year</span></h6>
+          <p>Currently pursuing a dual focus in AI and Web. Most of my classes are currently quite introductory, but my side projects and self-motivation help me expand my scope of knowledge. With a strong grasp on the basics, new computer languages and even logic come fairly naturally to me. My side projects are listed below and a link explaining each one of them in detail is attached. I always strive to take the "advanced version" of any available CSC courses and love to challenge myself at Hackathons.</p>
+          <div class="row">
+            <div class="col-6">
+              <h4>Mathematics</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Sept 2017 - Present</h5>
+            </div>
+          </div>
+          <h6><span class="badge badge-secondary">Applied Statistics</span> <span class="badge badge-secondary">Second Year</span></h6>
+          <p>Perhaps a cousin of CompSci, I have always been interested in Math and as a highschooler participated in many competitions. Most notably, my school sponsored my travel to Belgium to compete in ISMTF where I did very well. After my first year taking proof based Calculus (an unneccary course I took purely for self-interest), I decided to add the challenge of majoring in Math. I am currently diversifying my Mathematical skill set and am preparing to take part in the 2018 Putnam competition (an internationally recognized math competition) with my school team.</p>
+        </div>
+            </div>
+        <div class="col-md-6 col-sm-12">
+          <h2>Skill Set</h2>
+          <hr>
+            <div class="progress mt-4">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> CSS</div>
+          </div>
+            <div class="progress mt-4">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">Adobe DreamWeaver, Spark &amp; XD</div>
+          </div>
+            <div class="progress mt-4">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> FireBase & Basic NodeJS </div>
+          </div>
+            <div class="progress mt-4">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">Swift</div>
+          </div>
+            <div class="progress mt-4">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"> Android Studio</div>
+          </div>
+            <div class="progress mt-4">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> HTML</div>
+          </div>
+            <div class="progress mt-4">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"> Java </div>
+          </div>
+            <div class="progress mt-4">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"> Python</div>
+          </div>
+          <div class="progress mt-4">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"> Learning New Things & Problem Solving </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h2>Professional Experience</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>ABC Corp.</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Jan 2002 - Dec 2006</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Web Developer</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, recusandae, corporis, tempore nam fugit deleniti sequi excepturi quod repellat laboriosam soluta laudantium amet dicta non ratione distinctio nihil dignissimos esse!</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>XYZ Corp.</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Jan 2002 - Dec 2006</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Senior Web Developer</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, recusandae, corporis, tempore nam fugit deleniti sequi excepturi quod repellat laboriosam soluta laudantium amet dicta non ratione distinctio nihil dignissimos esse!</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+          </ul>
+        </div>
+      </div>
+        <div class="row" style="padding-top: 10px">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>ABC Corp.</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Jan 2002 - Dec 2006</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Web Developer</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, recusandae, corporis, tempore nam fugit deleniti sequi excepturi quod repellat laboriosam soluta laudantium amet dicta non ratione distinctio nihil dignissimos esse!</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-5">
+              <h4>XYZ Corp.</h4>
+            </div>
+            <div class="col-6">
+              <h5 class="text-right"><span aria-hidden="true"></span> Jan 2002 - Dec 2006</h5>
+            </div>
+          </div>
+          <h5><span class="badge badge-secondary">Senior Web Developer</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, recusandae, corporis, tempore nam fugit deleniti sequi excepturi quod repellat laboriosam soluta laudantium amet dicta non ratione distinctio nihil dignissimos esse!</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <h2>Portfolio</h2>
+      <hr>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/connct.png" alt=""></div>
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+          <div class="col-sm-4 col-12 p-0"><img class="img-thumbnail"  src="images/300X200.gif" alt=""></div>
+        </div>
+      </div>
+      <hr>
+      <h2 id="contactMe">Contact</h2>
+      <hr>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8  col-12 jumbotron">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
+                <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
+                <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <footer class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p>Copyright © Sarthak Saxena. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>
